@@ -31,11 +31,6 @@ export default [
             component: './Dashboard/Analysis',
           },
           {
-            path: '/dashboard/users',
-            name: 'users',
-            component: './Dashboard/Analysis',
-          },
-          {
             path: '/dashboard/monitor',
             name: 'monitor',
             component: './Dashboard/Monitor',
@@ -44,6 +39,23 @@ export default [
             path: '/dashboard/workplace',
             name: 'workplace',
             component: './Dashboard/Workplace',
+          },
+        ],
+      },
+      {
+        path: '/products',
+        name: 'products',
+        icon: 'dashboard',
+        routes: [
+          {
+            path: '/products/articles',
+            name: 'articles',
+            component: './Articles/List',
+          },
+          {
+            path: '/products/movies',
+            name: 'movies',
+            component: './Dashboard/Monitor',
           },
         ],
       },

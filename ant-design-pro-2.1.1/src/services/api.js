@@ -9,12 +9,12 @@ export async function queryActivities() {
   return request('/api/activities');
 }
 
-export async function queryRule(params) {
-  return request(`/api/rule?${stringify(params)}`);
+export async function queryArticle(params) {
+  return request(`/api/article?${stringify(params)}`);
 }
 
-export async function removeRule(params) {
-  return request('/api/rule', {
+export async function removeArticle(params) {
+  return request('/api/article', {
     method: 'POST',
     body: {
       ...params,
@@ -23,8 +23,8 @@ export async function removeRule(params) {
   });
 }
 
-export async function addRule(params) {
-  return request('/api/rule', {
+export async function addArticle(params) {
+  return request('/api/article', {
     method: 'POST',
     body: {
       ...params,
@@ -33,8 +33,8 @@ export async function addRule(params) {
   });
 }
 
-export async function updateRule(params) {
-  return request('/api/rule', {
+export async function updateArticle(params) {
+  return request('/api/article', {
     method: 'POST',
     body: {
       ...params,

@@ -132,6 +132,7 @@ function postArticle(req, res, u, b) {
   return res.json(result);
 }
 
+// 这是mock数据的关键
 export default {
   'GET /api/article': getArticle,
   'POST /api/article': postArticle,

@@ -109,9 +109,10 @@
     "last 2 versions",
     "not ie <= 10"
   ],
+  
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-staged"
+      "pre-commit": ""
     }
   }
 }
